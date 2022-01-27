@@ -20,7 +20,7 @@ const radialScale = scaleLinear()
   .domain([0, 1])
   .range([Math.PI * -0.75, Math.PI * 0.75]);
 
-const amountScale = scaleLinear().domain([0, 1]).range([0, 1000]);
+const amountScale = scaleLinear().domain([0, 1]).range([0, 102.38]);
 
 const pathGenerator = arc<Value>()
   .innerRadius(274)
@@ -55,8 +55,12 @@ function BetterYieldBase({ className }: BetterYieldProps) {
         <h2>
           Step 1
         </h2>
+        <br />
+        <h3>
+          We calculate your transaction's carbon footprint.
+        </h3>
         <p>
-          We calculate your carbon footprint.
+        On average, the carbon footprint of a single Ethereum transaction is 102.38 kilograms of CO2.
           <br />
           <a href={links.betterYield} target="_blank" rel="noreferrer">
             Learn more <CircleArrowRight />
@@ -72,8 +76,6 @@ function BetterYieldBase({ className }: BetterYieldProps) {
 }
 
 const Circle = animated((props: Value) => {
-  console.log("DEBUGGING props");
-  console.log(props);
   return (
     <svg width="100%" height="100%" viewBox="0 0 598 598">
       <defs>
@@ -122,7 +124,7 @@ const Circle = animated((props: Value) => {
           letterSpacing="-4"
           fill="url(#pattern)"
         >
-          ${numeral(amountScale(props.ratio)).format('0,0')}
+          {numeral(amountScale(props.ratio)).format('0,0')} kg
         </tspan>
       </text>
     </svg>
@@ -149,6 +151,13 @@ export const BetterYield = styled(BetterYieldBase)`
 
     h2 {
       font-size: 3.5em;
+      line-height: 1.1;
+      letter-spacing: -1px;
+      color: #171717;
+    }
+
+    h3 {
+      font-size: 1.5em;
       line-height: 1.1;
       letter-spacing: -1px;
       color: #171717;
