@@ -26,11 +26,9 @@ function FrictionlessAcessBase({ className }: FrictionlessAcessProps) {
       data-intersection={elementIntersection?.isIntersecting}
     >
       <article>
-        <h2>Anchor offers frictionless access</h2>
+        <h2>Step 3</h2>
         <p>
-          Anchor savings has no minimum deposits, account freezes, or signup
-          requirements - it can be used by anyone in the world with access to
-          the internet.
+          Join SusDAU and mint your SusNFT
           <br />
           <a href={links.frictionlessAccess} target="_blank" rel="noreferrer">
             Learn more <CircleArrowRight />

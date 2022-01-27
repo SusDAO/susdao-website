@@ -53,14 +53,10 @@ function BetterYieldBase({ className }: BetterYieldProps) {
     >
       <article>
         <h2>
-          SusDAO
-          <br />
-          offers
-          <br />
-          better yield
+          Step 1
         </h2>
         <p>
-          Step 1
+          We calculate your carbon footprint.
           <br />
           <a href={links.betterYield} target="_blank" rel="noreferrer">
             Learn more <CircleArrowRight />
@@ -76,6 +72,8 @@ function BetterYieldBase({ className }: BetterYieldProps) {
 }
 
 const Circle = animated((props: Value) => {
+  console.log("DEBUGGING props");
+  console.log(props);
   return (
     <svg width="100%" height="100%" viewBox="0 0 598 598">
       <defs>
@@ -104,14 +102,14 @@ const Circle = animated((props: Value) => {
           transform="translate(299, 299)"
         />
       )}
-      <text opacity="0.4" fontSize="10" fill="#373737">
-        <tspan x="114" y="505">
-          BANK
+      <text fontSize="18" fill="#373737">
+        <tspan x="114" y="520">
+          Ethereum Transactions
         </tspan>
       </text>
-      <text opacity="0.4" fontSize="10" fill="#373737">
-        <tspan x="440" y="505">
-          ANCHOR
+      <text fontSize="18" fill="#373737">
+        <tspan x="350" y="520">
+          Carbon Footprint
         </tspan>
       </text>
       <text>

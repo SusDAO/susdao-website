@@ -92,7 +92,7 @@ function BetterSavingsBase({
   return (
     <section className={className} style={{ height }}>
       <h2 className="title">
-        <span>ΞSusDAO</span>
+        <span style={{ color: "rgb(112, 216, 112)"}}>ΞSus</span>DAO
       </h2>
       <h3 className="subtitle">
         We're the DAO that makes crypto <span style={{ color: "rgb(112, 216, 112)"}}>green</span>.

@@ -13,7 +13,7 @@ function WebAppButtonBase({ className }: WebAppButtonProps) {
       href={links.app}
       target="anchor-webapp"
     >
-      <Labtop /> WebApp
+      <Labtop /> Web App
     </a>
   );
 }

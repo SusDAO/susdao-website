@@ -32,18 +32,13 @@ function EasierIntegrationsBase({ className }: EasierIntegrationsProps) {
 
       <article>
         <h2>
-          Anchor
-          <br />
-          offers easier
-          <br />
-          integrations
+          Step 2
         </h2>
         <p>
-          Anchor’s open source Savings-as-a-Service SDK can be integrated in 10
-          lines of code to any serviced application holding user balances.
+          Make your claim to become carbon neutral.
           <br />
           <a href={links.easierIntegration} target="_blank" rel="noreferrer">
-            Read the docs <CircleArrowRight />
+            Learn more <CircleArrowRight />
           </a>
         </p>
       </article>

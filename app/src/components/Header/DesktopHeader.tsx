@@ -11,14 +11,17 @@ function DesktopHeaderBase({ className, color }: DesktopHeaderProps) {
   return (
     <header className={className} data-dark={color === 'dark'}>
       <section>
-        <span>ANCHOR</span>
+        <span>SusDAO</span>
       </section>
       <nav>
         <a href={links.app} target="anchor-webapp">
-          DASHBOARD
+          ABOUT
         </a>
         <a href={links.developers} target="anchor-developers">
-          DEVELOPERS
+          DISCORD
+        </a>
+        <a href={links.developers} target="anchor-developers">
+          TWITTER
         </a>
       </nav>
       <section>
@@ -43,7 +46,7 @@ export const DesktopHeader = styled(DesktopHeaderBase)`
     font-size: 16px;
     font-weight: 900;
 
-    color: #333333;
+    color: white;
   }
 
   nav {
@@ -81,31 +84,31 @@ export const DesktopHeader = styled(DesktopHeaderBase)`
 
     > :first-child {
       a {
-        color: rgba(255, 255, 255, 0.5);
+        color: white;
       }
     }
 
     nav {
       a {
-        color: rgba(255, 255, 255, 0.35);
+        color: white;
 
         &:hover {
-          color: rgba(255, 255, 255, 0.5);
+          color: white;
         }
 
         &.active {
-          color: rgba(255, 255, 255, 0.6);
+          color: white;
         }
       }
     }
 
     > :last-child {
       .webapp {
-        color: rgba(255, 255, 255, 0.54);
+        color: white;
         background-color: #161616;
 
         &:hover {
-          color: rgba(255, 255, 255, 0.65);
+          color: white;
           background-color: #242424;
         }
       }
