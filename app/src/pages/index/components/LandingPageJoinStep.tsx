@@ -6,11 +6,11 @@ import styled from 'styled-components';
 import signalImage from './assets/signal.png';
 import signal2xImage from './assets/signal@2x.png';
 
-export interface FrictionlessAcessProps {
+export interface LandingPageJoinStepProps {
   className?: string;
 }
 
-function FrictionlessAcessBase({ className }: FrictionlessAcessProps) {
+function LandingPageJoinStepBase({ className }: LandingPageJoinStepProps) {
   const elementRef = useRef<HTMLElement>(null);
 
   const elementIntersection = useElementIntersection({
@@ -30,7 +30,7 @@ function FrictionlessAcessBase({ className }: FrictionlessAcessProps) {
         <p>
           Join SusDAU and mint your SusNFT
           <br />
-          <a href={links.frictionlessAccess} target="_blank" rel="noreferrer">
+          <a href={links.landingPageJoinStep} target="_blank" rel="noreferrer">
             Learn more <CircleArrowRight />
           </a>
         </p>
@@ -41,7 +41,7 @@ function FrictionlessAcessBase({ className }: FrictionlessAcessProps) {
   );
 }
 
-export const FrictionlessAcess = styled(FrictionlessAcessBase)`
+export const LandingPageJoinStep = styled(LandingPageJoinStepBase)`
   // ---------------------------------------------
   // style
   // ---------------------------------------------

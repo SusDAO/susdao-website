@@ -1,7 +1,7 @@
 import { auditMeasure } from '@libs/audit-fastdom';
 import { isTouchDevice } from '@libs/is-touch-device';
 import { landingMobileLayout } from 'env';
-import { FrictionlessAcess } from 'pages/index/components/FrictionlessAcess';
+import { LandingPageJoinStep } from 'pages/index/components/LandingPageJoinStep';
 import { Subscribe } from 'pages/index/components/Subscribe';
 import { useEffect, useMemo, useRef } from 'react';
 import SmoothScroll from 'smooth-scroll';
@@ -76,7 +76,7 @@ function IndexBase({ className }: IndexProps) {
       <ResponsiveContainer ref={scrollTarget}>
         <BetterYield />
         <EasierIntegrations />
-        <FrictionlessAcess />
+        <LandingPageJoinStep />
         <Subscribe />
       </ResponsiveContainer>
     </div>
