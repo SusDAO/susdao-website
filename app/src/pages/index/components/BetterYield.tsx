@@ -53,15 +53,14 @@ function BetterYieldBase({ className }: BetterYieldProps) {
     >
       <article>
         <h2>
-          Anchor
+          SusDAO
           <br />
           offers
           <br />
           better yield
         </h2>
         <p>
-          Anchor's yield is stable and attractive - powered by staking returns
-          from multiple Proof of Stake blockchains.
+          Step 1
           <br />
           <a href={links.betterYield} target="_blank" rel="noreferrer">
             Learn more <CircleArrowRight />

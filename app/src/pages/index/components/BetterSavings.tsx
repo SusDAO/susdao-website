@@ -92,19 +92,11 @@ function BetterSavingsBase({
   return (
     <section className={className} style={{ height }}>
       <h2 className="title">
-        <span>Better</span> <span>Savings</span>
+        <span>ΞSusDAO</span>
       </h2>
-      <canvas
-        ref={canvasRef}
-        width={graphicsSize * 2}
-        height={graphicsSize * 2}
-        style={{
-          width: graphicsSize,
-          height: graphicsSize,
-          opacity: isIntersecting ? 1 : 0,
-          border: disable3D ? '2px dashed blue' : undefined,
-        }}
-      />
+      <h3 className="subtitle">
+        We're the DAO that makes crypto green.
+      </h3>
     </section>
   );
 }
