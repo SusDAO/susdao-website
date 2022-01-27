@@ -95,7 +95,7 @@ function BetterSavingsBase({
         <span>ΞSusDAO</span>
       </h2>
       <h3 className="subtitle">
-        We're the DAO that makes crypto green.
+        We're the DAO that makes crypto <span style={{ color: "rgb(112, 216, 112)"}}>green</span>.
       </h3>
     </section>
   );
@@ -104,7 +104,9 @@ function BetterSavingsBase({
 export const BetterSavings = styled(BetterSavingsBase)`
   position: relative;
 
-  display: grid;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
   place-items: center;
 
   width: 100%;
@@ -117,23 +119,15 @@ export const BetterSavings = styled(BetterSavingsBase)`
     color: white;
   }
 
-  > canvas {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-56%, -50%);
-
-    transition: opacity 2s ease-out;
+  > h3 {
+    text-align: center;
+    line-height: 1em;
+    color: white;
   }
 
   @media (max-width: ${landingMobileLayout}px) {
     > h2 {
       margin-top: 40vh;
-    }
-
-    > canvas {
-      top: 40%;
-      transform: translate(-50%, -50%);
     }
   }
 `;
