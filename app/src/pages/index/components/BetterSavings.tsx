@@ -112,13 +112,9 @@ export const BetterSavings = styled(BetterSavingsBase)`
 
   > h2 {
     font-size: clamp(80px, 10vw, 156px);
-    font-weight: 900;
     text-align: center;
     line-height: 1em;
-
-    text-shadow: rgb(255 255 255 / 50%) 0 -1px 2px, rgb(0 0 0) 1px 1px 1px;
-    color: rgb(47, 50, 46);
-    word-spacing: 1.4em;
+    color: white;
   }
 
   > canvas {
