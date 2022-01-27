@@ -16,7 +16,7 @@ export const headerHeight = 84;
 
 export const links = {
   developers: 'https://docs.anchorprotocol.com/developers-earn/anchor-earn-sdk',
-  app: 'https://app.anchorprotocol.com',
+  app: 'http://localhost:3001/',
   betterYield: 'https://docs.anchorprotocol.com/protocol/overview',
   easierIntegration:
     'https://docs.anchorprotocol.com/developers-earn/anchor-earn-sdk',

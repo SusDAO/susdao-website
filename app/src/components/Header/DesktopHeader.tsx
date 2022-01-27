@@ -105,7 +105,7 @@ export const DesktopHeader = styled(DesktopHeaderBase)`
     > :last-child {
       .webapp {
         color: white;
-        background-color: #161616;
+        background-color: rgb(112, 216, 112);
 
         &:hover {
           color: white;
