@@ -3,7 +3,7 @@ import { useElementIntersection } from '@libs/use-element-intersection';
 import { links } from 'env';
 import { useRef } from 'react';
 import styled from 'styled-components';
-import codeImage from './assets/code.png';
+import codeImage from './assets/carbon-neutral.png';
 
 export interface EasierIntegrationsProps {
   className?: string;
@@ -31,16 +31,15 @@ function EasierIntegrationsBase({ className }: EasierIntegrationsProps) {
       </figure>
 
       <article>
-        <h2>
-          Step 2
-        </h2>
-        <p>
+        <h2>Step 2</h2>
+        <br />
+        <h3 style={{ color: 'black' }}>
           Make your claim to become carbon neutral.
-          <br />
-          <a href={links.easierIntegration} target="_blank" rel="noreferrer">
-            Learn more <CircleArrowRight />
-          </a>
-        </p>
+        </h3>
+        <br />
+        <a href={links.easierIntegration} target="_blank" rel="noreferrer">
+          Learn more <CircleArrowRight />
+        </a>
       </article>
     </section>
   );
