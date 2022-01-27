@@ -6,11 +6,11 @@ import styled from 'styled-components';
 import signalImage from './assets/signal.png';
 import signal2xImage from './assets/signal@2x.png';
 
-export interface FrictionlessAcessProps {
+export interface LandingPageJoinStepProps {
   className?: string;
 }
 
-function FrictionlessAcessBase({ className }: FrictionlessAcessProps) {
+function LandingPageJoinStepBase({ className }: LandingPageJoinStepProps) {
   const elementRef = useRef<HTMLElement>(null);
 
   const elementIntersection = useElementIntersection({
@@ -27,11 +27,13 @@ function FrictionlessAcessBase({ className }: FrictionlessAcessProps) {
     >
       <article>
         <h2>Step 3</h2>
+        <br />
+        <h3>Enter the <span style={{ color: "rgb(112, 216, 112)"}}>SusDAO</span> community!</h3>
         <p>
-          Join SusDAU and mint your SusNFT
+          Receive an exclusive <span style={{ color: "rgb(112, 216, 112)"}}>NFT</span> and connect with a like-minded community who has committed to making <span style={{ color: "rgb(112, 216, 112)"}}>crypto sustainable</span>. 
           <br />
-          <a href={links.frictionlessAccess} target="_blank" rel="noreferrer">
-            Learn more <CircleArrowRight />
+          <a href={links.landingPageJoinStep} target="_blank" rel="noreferrer">
+            Discord <CircleArrowRight />
           </a>
         </p>
       </article>
@@ -41,7 +43,7 @@ function FrictionlessAcessBase({ className }: FrictionlessAcessProps) {
   );
 }
 
-export const FrictionlessAcess = styled(FrictionlessAcessBase)`
+export const LandingPageJoinStep = styled(LandingPageJoinStepBase)`
   // ---------------------------------------------
   // style
   // ---------------------------------------------
@@ -63,6 +65,13 @@ export const FrictionlessAcess = styled(FrictionlessAcessBase)`
 
     h2 {
       font-size: 3.5em;
+      line-height: 1.1;
+      letter-spacing: -1px;
+      color: #171717;
+    }
+
+    h3 {
+      font-size: 1.5em;
       line-height: 1.1;
       letter-spacing: -1px;
       color: #171717;

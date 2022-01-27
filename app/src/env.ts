@@ -20,7 +20,7 @@ export const links = {
   betterYield: 'https://docs.anchorprotocol.com/protocol/overview',
   easierIntegration:
     'https://docs.anchorprotocol.com/developers-earn/anchor-earn-sdk',
-  frictionlessAccess: 'https://app.anchorprotocol.com',
+  landingPageJoinStep: 'https://app.anchorprotocol.com',
   contact: 'mailto:info@anchorprotocol.com',
   whitepaper: 'https://anchorprotocol.com/docs/anchor-v1.1.pdf',
   discord: 'https://discord.gg/9aUYgpKZ9c',
