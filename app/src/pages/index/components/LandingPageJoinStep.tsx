@@ -27,11 +27,13 @@ function LandingPageJoinStepBase({ className }: LandingPageJoinStepProps) {
     >
       <article>
         <h2>Step 3</h2>
+        <br />
+        <h3>Enter the <span style={{ color: "rgb(112, 216, 112)"}}>SusDAO</span> community!</h3>
         <p>
-          Join SusDAU and mint your SusNFT
+          Receive an exclusive <span style={{ color: "rgb(112, 216, 112)"}}>NFT</span> and connect with a like-minded community who has committed to making <span style={{ color: "rgb(112, 216, 112)"}}>crypto sustainable</span>. 
           <br />
           <a href={links.landingPageJoinStep} target="_blank" rel="noreferrer">
-            Learn more <CircleArrowRight />
+            Discord <CircleArrowRight />
           </a>
         </p>
       </article>
@@ -63,6 +65,13 @@ export const LandingPageJoinStep = styled(LandingPageJoinStepBase)`
 
     h2 {
       font-size: 3.5em;
+      line-height: 1.1;
+      letter-spacing: -1px;
+      color: #171717;
+    }
+
+    h3 {
+      font-size: 1.5em;
       line-height: 1.1;
       letter-spacing: -1px;
       color: #171717;
